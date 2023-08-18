@@ -1,0 +1,157 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --Success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background-color: var(--white-background);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header part */
+.logo {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo-decoration {
+    /* color: var(--primary-brand); */
+    color: #2E2F42;
+}
+
+.link-decoration {
+    /* color: var(--dark); */
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.items-decoration .link-decoration {
+    color: var(--text);
+    font-weight: 400;
+}
+
+.contact {
+    font-style: normal;
+}
+
+.link-decoration:hover,
+.link-decoration:focus {
+    color: var(--pressed-state);
+}
+
+/* Hero part */
+.hero {
+    background-color: var(--hero-background);
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--white-background);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+.hero-btn {
+    cursor: pointer;
+    color: var(--white-background);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressed-state);
+}
+
+/* Features part */
+.general-title {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.general-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Team part */
+.team {
+    background-color: var(--light);
+}
+
+.team-list {
+    background-color: var(--white-background);
+}
+
+.team-title {
+    color: var(--dark);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/* Portfolio part */
+.portfolio-title {
+    color: var(--dark);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/* Footer part */
+.site-bootom {
+    background-color: var(--dark);
+}
+
+.site-bootom .logo-decoration {
+    /* color: var(--light); */
+    color: #f4f4fd;
+}
+
+.site-bootom .general-text {
+    /* color: var(--light); */
+    color: #f4f4fd;
+}
