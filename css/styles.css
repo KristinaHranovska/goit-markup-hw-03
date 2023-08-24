@@ -79,9 +79,6 @@ img {
 .navigation-site {
     display: flex;
     align-items: center;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logo {
@@ -105,6 +102,11 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+.site-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .link-decoration {
     color: var(--dark);
