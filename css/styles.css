@@ -12,17 +12,14 @@
     --white-background: #FFFFFF;
     --modal-background: #FCFCFC;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
     background-color: var(--white-background);
 }
-
 ul {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
 }
@@ -33,12 +30,17 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -51,39 +53,62 @@ ul {
     padding-bottom: 120px;
 }
 
-/* Header part */
+/* --------- Header part --------- */
+/* у header використати  justify-content: space-between;*/
+.head-site {
+    border-bottom: 1px solid var(--accent);
+}
+.head-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-site {
+    display: flex;
+}
+
 .logo {
+    display: block;
+
     color: var(--primary-brand);
-    /* color: #4d5ae5; */
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
 
+    margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .logo-decoration {
-    color: var(--primary-brand);
-    /* color: #2E2F42; */
+    color: var(--dark);
 }
 
+.navigation-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .link-decoration {
     color: var(--dark);
-    /* color: #2e2f42; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+.contact {
+    font-style: normal;
+}
+.contact-site{
+    display: flex;
+    gap: 40px;
+}
 .items-decoration .link-decoration {
     color: var(--text);
     font-weight: 400;
-}
-
-.contact {
-    font-style: normal;
 }
 
 .link-decoration:hover,
@@ -91,10 +116,12 @@ ul {
     color: var(--pressed-state);
 }
 
-/* Hero part */
+/* --------- Hero part --------- */
 .hero {
     background-color: var(--hero-background);
     text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -104,8 +131,9 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-}
 
+    margin-bottom: 48px;
+}
 .hero-btn {
     cursor: pointer;
     color: var(--white-background);
@@ -113,7 +141,13 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
     background-color: var(--primary-brand);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -156,6 +190,12 @@ ul {
 }
 
 /* Portfolio part */
+/* Задати розміри карткам через flex-basis: calc((100% - 72) / 3);
+додати gap: 24px;
+приклад я позбавитися верхньої рамки:
+border: 1px solid black;
+border-top: none;
+*/
 .portfolio-title {
     color: var(--dark);
     text-align: center;
@@ -173,10 +213,8 @@ ul {
 
 .site-bootom .logo-decoration {
     color: var(--light);
-    /* color: #f4f4fd; */
 }
 
 .site-bootom .general-text {
     color: var(--light);
-    /* color: #f4f4fd; */
 }
