@@ -52,6 +52,18 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 /* --------- Header part --------- */
 /* у header використати  justify-content: space-between;*/
@@ -120,6 +132,7 @@ img {
 .hero {
     background-color: var(--hero-background);
     text-align: center;
+
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -155,19 +168,26 @@ img {
     background-color: var(--pressed-state);
 }
 
-/* Features part */
+/* --------- Features part --------- */
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
 .general-title {
     color: var(--dark);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
 }
 
 .general-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.017em;
 }
 
 /* Team part */
