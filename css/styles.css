@@ -70,8 +70,6 @@ img {
 /* --------- Header part --------- */
 .head-site {
     border-bottom: 1px solid var(--accent);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .head-block {
     display: flex;
@@ -104,6 +102,9 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .link-decoration {
     color: var(--dark);
